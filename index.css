@@ -1,4 +1,4 @@
-@import url(styles/index.css);
+@import url(styles/style.css);
 
 @import "tailwindcss";
 
@@ -60,7 +60,6 @@ input[type="checkbox"] {
 .checkbox-container {
     display: flex;
     align-items: center;
-    user-select: none;
     cursor: pointer;
     position: relative;
 }
