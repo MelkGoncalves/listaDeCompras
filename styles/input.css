@@ -1,0 +1,15 @@
+input[type=text] {
+    border: 1px solid var(--border-primary);
+}
+
+input[type=text]:hover {
+    border: 2px solid var(--border-secondary);
+}
+
+.item {
+    border: 1px solid var(--border-primary);
+}
+
+.item:hover {
+    border: 1.2px solid var(--border-secondary);
+}

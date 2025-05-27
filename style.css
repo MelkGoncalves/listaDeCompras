@@ -1,0 +1,145 @@
+@import url(/styles/index.css);
+
+@import "tailwindcss";
+
+
+
+#header {
+    padding-top: 1.56rem;
+
+}
+
+.back {
+    color: var(--brand);
+}
+
+main {
+    margin: 0 auto;
+}
+
+footer {
+    margin: auto;
+}
+
+#input {
+    padding: 9px;
+}
+
+button {
+    padding: 12px 24px;
+}
+
+button:hover {
+    background-color: var(--brand-hover);
+}
+
+.item {
+    padding: .5rem .75rem .5rem .75rem;
+
+
+    & img {
+        margin-left: auto;
+    }
+}
+
+.delete {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-primary);
+    border-radius: 40%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    position: absolute;
+    
+}
+
+.check-icon:hover {
+    border-color: var(--brand-hover);
+}
+
+input[type="checkbox"]:checked + .check-icon {
+    background-color: var(--brand);
+    border-color: var(--brand);
+
+}
+
+.check-icon::after {
+    content: "";
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+input[type="checkbox"]:checked + .check-icon::after {
+    opacity: 1;
+}
+
+.alert-1 {
+    display: flex;
+    background-color: var(--additional);
+    max-width: 100%;
+    width: 39.1875rem;
+    height: 2.75rem;
+    gap: 1rem;
+    margin-top: 5rem;
+    border-radius: .5rem;
+    padding: 0 1rem;
+     
+    box-sizing: border-box ;
+
+
+    opacity: 0;
+}
+
+ .alert-2 {
+    display: flex;
+    background-color: var(--danger);
+    max-width: 100%;
+    width: 39.1875rem;
+    height: 2.75rem;
+    gap: 1rem;
+    margin-top: 5rem;
+    border-radius: .5rem;
+    padding: 0 1rem;
+     
+    box-sizing: border-box ;
+
+
+    opacity: 0;
+}
+
+.message .close {  
+    margin-left: auto;
+    cursor: pointer;
+}
+

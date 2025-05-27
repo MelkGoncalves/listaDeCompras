@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+    
+    crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Lista de compras</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Montserrat:ital,wght@0,500;1,500&family=Syne:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justify-center items-center flex-col max-h-full max-w-full">
+    <div class="container gap-15.5 flex flex-col">
+
+        <header class="">
+            <div id="header" class="flex h-10 w-full justify-center items-center gap-1.5">
+                <img class="w-7.5 h-5.5" src="icons/logo.svg" alt="">
+                <h1 class="leading-10 font-bold font tracking-tight text-2xl font-[Inter]">quicklist</h1>
+            </div>
+        </header>
+    
+        <main class="flex flex-col justify-center gap-7 ">
+            <div class="logo grid gap-4">
+                <span id="back" class="back text-[1rem]"><- Voltar</span>
+                <h2 class="text-2xl font-bold leading-[32px] ">Compras da semana</h2>        
+            </div>
+    
+            <div id="input-container" class="flex gap-4 w-157">
+                <input class="w-112 rounded-xl bg-[var(--bg-secondary)]"  type="text" id="input" placeholder="Adicione um novo item ">
+                <button type="button" class="w-41 rounded-lg bg-[var(--brand)] text-[var(--always-white)] font-[1rem] font-bold leading-[20px]" id="btn" >Adicionar item</button>
+            </div>
+    
+            <ul id="list" class="flex flex-col gap-4 w-157">
+                <li id="item" class="item flex items-center gap-3 border-2 rounded-xl bg-[var(--bg-secondary)]">
+                    <label class="checkbox-container"  for="chk">
+                        <input type="checkbox">
+                        <span class="check-icon"></span>
+                    </label>
+                    <p>Pão de forma</p>
+                    <img class="delete" src="icons/garbage.svg" alt="">
+                </li>
+
+                <li id="item" class="item flex items-center gap-3 border-2 rounded-xl bg-[var(--bg-secondary)]">
+                      <label class="checkbox-container"  for="chk">
+                        <input type="checkbox">
+                        <span class="check-icon"></span>
+                    </label>
+                    <p>Café preto</p>
+                    <img class="delete" src="icons/garbage.svg" alt="">
+                </li>
+
+                <li id="item" class="item flex items-center gap-3 border-2 rounded-xl bg-[var(--bg-secondary)]">
+                     <label class="checkbox-container"  for="chk">
+                        <input type="checkbox">
+                        <span class="check-icon"></span>
+                    </label>
+                    <p>Suco de laranja</p>
+                    <img class="delete" src="icons/garbage.svg" alt="">
+                </li>
+
+                <li id="item" class="item flex items-center gap-3 border-2 rounded-xl bg-[var(--bg-secondary)]">
+                      <label class="checkbox-container"  for="chk">
+                        <input type="checkbox">
+                        <span class="check-icon"></span>
+                    </label>
+                    <p>Bolacha</p>
+                    <img class="delete" src="icons/garbage.svg" alt="">
+                </li>
+            </ul>          
+        </main>
+
+        
+        <footer class="message">
+                <div class="alert-1 justify-start items-center">
+                    <img class="w-5 h-5 gap-2" src="icons/alert.svg" alt="simbolo de alerta">
+                    <p class="text-[var(--always-white)] font-[.875rem]  leading-[20px]">O item foi adicionado á lista </p>
+                    <img class="close " src="icons/close.svg  " alt="">
+                </div>
+
+                <div class="alert-2 justify-start items-center">
+                    <img class="w-5 h-5 gap-2" src="icons/alert.svg" alt="simbolo de alerta">
+                    <p class="text-[var(--always-white)] font-[.875rem]  leading-[20px]">O item foi removido da lista </p>
+                    <img class="close " src="icons/close.svg  " alt="">
+                </div>
+            
+         </footer>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
